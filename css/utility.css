@@ -1,0 +1,38 @@
+:root {
+  --themeColor: #05e1f1;
+  --bg1: #20232f;
+  --bg2: #323744;
+  --fontClr: #ffffff;
+  --m1: 1rem;
+  --fontPara: 1.1rem;
+  --fontSubheading: 1.7rem;
+  --hoverEffect: 0 0 10px var(--themeColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  margin: 6vw;
+  margin-bottom: 4vw;
+}
+
+.hr {
+  width: 85vw;
+  margin: auto;
+  color: var(--bg1);
+}
+
+.themeTxt {
+  color: var(--themeColor);
+}
+
+.sectionHeading {
+  font-size: 3rem;
+}
+
+.sech1 {
+  margin-bottom: 4vw;
+  text-align: center;
+}
