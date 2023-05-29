@@ -354,7 +354,10 @@ nav > a > img:hover {
 
 .footerData > p {
   width: 60vw;
-
   margin: auto;
+  padding: 1rem;
+}
+
+.copyright {
   padding: 1rem;
 }
