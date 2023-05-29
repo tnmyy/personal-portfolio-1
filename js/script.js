@@ -44,3 +44,10 @@ for (i = 0; i < data.length; i++) {
   projectPath.href = `${data[i].path}`;
   infoDiv.appendChild(projectPath);
 }
+
+// Footer year
+
+let footerYear = document.getElementById("year");
+let newDate = new Date();
+
+footerYear.innerHTML = newDate.getFullYear();

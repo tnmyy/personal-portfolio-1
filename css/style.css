@@ -15,20 +15,26 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
-  padding: 1rem;
-  background: var(--bg2);
+  padding: 0.2rem;
+  background: var(--bg1);
   align-items: center;
   position: fixed;
   width: 100%;
   z-index: 2;
-  height: 10vh;
+  /* height: 10vh; */
   top: 0;
+  /* border-bottom: 1px solid var(--fontClr); */
 }
 
 nav > a > img {
-  width: 5rem;
-  border: 1px solid var(--themeColor);
+  width: 6rem;
+  border: 2px solid var(--themeColor);
   border-radius: 50%;
+  margin: 0.5rem;
+}
+
+nav > a > img:hover {
+  transform: scale(1.1);
 }
 
 .listItems {
@@ -48,12 +54,12 @@ nav > a > img {
 .listItems > li > a:hover {
   color: var(--themeColor);
   text-shadow: var(--hoverEffect);
+  font-size: 1.2rem;
 }
 
 /* Home */
 
 #home {
-  margin: 8rem;
   margin-top: 10rem;
 }
 
@@ -102,24 +108,6 @@ nav > a > img {
   transform: scale(1.03);
 }
 
-.btn {
-  background: var(--themeColor);
-  padding: 0.7rem 1.7rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: 2px solid var(--themeColor);
-  border-radius: 40px;
-  box-shadow: var(--hoverEffect);
-  color: var(--bg2);
-  margin: 1rem 0;
-}
-
-.btn:hover {
-  cursor: pointer;
-  background: var(--bg1);
-  color: var(--fontClr);
-}
-
 .social,
 .social > a {
   font-size: 1.6rem;
@@ -136,6 +124,8 @@ nav > a > img {
 
 .socialIcons:hover {
   box-shadow: var(--hoverEffect);
+  background: var(--themeColor);
+  color: var(--bg1);
 }
 
 /* About */
@@ -145,6 +135,7 @@ nav > a > img {
   justify-content: space-evenly;
   align-items: center;
   text-align: justify;
+  background: var(--bg2);
 }
 
 .aboutData {
@@ -186,6 +177,8 @@ nav > a > img {
 .card:hover {
   border: 2px solid var(--themeColor);
   cursor: pointer;
+  box-shadow: var(--hoverEffect);
+  transform: scale(1.05);
 }
 
 .cardTitle {
@@ -207,9 +200,11 @@ nav > a > img {
 
 /* Portfolio */
 
+#portfolio {
+  background: var(--bg2);
+}
+
 #projects {
-  margin: 2rem;
-  margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,10 +221,10 @@ nav > a > img {
 }
 
 .projectImg {
-  width: 15rem;
+  width: 12rem;
   border: 3px solid var(--themeColor);
   border-radius: 1rem;
-  margin: 1rem;
+  margin: 1rem 0.5rem;
   margin-top: 0;
 }
 
@@ -269,8 +264,11 @@ nav > a > img {
   height: 15%;
 }
 
+.imgDiv:hover {
+  transform: scale(1.1);
+}
+
 .imgDiv:hover img {
-  width: 16rem;
   opacity: 0.5;
 }
 
@@ -292,6 +290,7 @@ nav > a > img {
   font-size: var(--fontPara);
   font-family: "Courier New", Courier, monospace;
   border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 .group {
@@ -311,4 +310,51 @@ nav > a > img {
   margin: 0 0.5rem;
   font-size: var(--fontPara);
   border-radius: 1rem;
+}
+
+/* Footer */
+
+.upArrow {
+  font-size: var(--fontSubheading);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 3rem;
+  padding: 0.2rem;
+  z-index: 3;
+  cursor: pointer;
+  border: 2px solid var(--themeColor);
+  background: var(--themeColor);
+  color: var(--bg1);
+  border-radius: 0.3rem;
+}
+
+.upArrow:hover {
+  box-shadow: var(--hoverEffect);
+  color: var(--themeColor);
+  background: var(--bg1);
+}
+
+#footer {
+  height: 10vh;
+  background: var(--bg2);
+  text-align: center;
+}
+
+.footerSocial,
+.copyright,
+.footerData {
+  background: var(--bg2);
+}
+
+.footerData > h1 {
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.footerData > p {
+  width: 60vw;
+
+  margin: auto;
+  padding: 1rem;
 }
