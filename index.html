@@ -12,23 +12,26 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
+    <link rel="shortcut icon" href="./img/tnmy.jpg" type="image/x-icon" />
   </head>
 
   <body>
+    <!-- Header -->
+
     <header>
       <nav>
         <a href="#"><img src="./img/tnmy.jpg" alt="Logo" /></a>
         <ul class="listItems">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#aboutLink">About</a></li>
+          <li><a href="#servicesLink">Services</a></li>
+          <li><a href="#portfolioLink">Portfolio</a></li>
+          <li><a href="#contactLink">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="sections">
+    <div id="sections">
       <!-- Home -->
 
       <section id="home" class="section">
@@ -47,8 +50,12 @@
               <a href="#"><i class="socialIcons fab fa-youtube"></i></a>
               <a href="#"><i class="socialIcons fab fa-facebook"></i></a>
               <a href="#"><i class="socialIcons fab fa-instagram"></i></a>
-              <a href="#"><i class="socialIcons fab fa-twitter"></i></a>
-              <a href="#"><i class="socialIcons fab fa-github"></i></a>
+              <a href="https://twitter.com/thetanmayupreti"
+                ><i class="socialIcons fab fa-twitter"></i
+              ></a>
+              <a href="https://github.com/tnmyy"
+                ><i class="socialIcons fab fa-github"></i
+              ></a>
             </div>
           </div>
           <div class="homeImg">
@@ -57,7 +64,7 @@
         </div>
         <a href="#"><button class="btn">Download CV</button></a>
       </section>
-      <hr class="hr" />
+      <br id="aboutLink" />
 
       <!-- About -->
 
@@ -78,7 +85,7 @@
           <button class="btn">Read More</button>
         </div>
       </section>
-      <hr class="hr" />
+      <br id="servicesLink" />
 
       <!-- Services -->
 
@@ -122,7 +129,7 @@
           </div>
         </div>
       </section>
-      <hr class="hr" />
+      <br id="portfolioLink" />
 
       <!-- Portfolio -->
 
@@ -135,7 +142,7 @@
           <!-- Images are handled by JS -->
         </div>
       </section>
-      <hr class="hr" />
+      <br id="contactLink" />
 
       <!-- Contact -->
 
@@ -185,9 +192,39 @@
           <input type="submit" value="Send Message" class="btn" />
         </form>
       </section>
-
-      <hr class="hr" />
     </div>
+
+    <!-- Footer-->
+
+    <footer id="footer">
+      <div class="footerData">
+        <h1>Tanmay Upreti</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+          consequuntur id quas enim quos, nobis voluptatibus delectus quisquam
+          ducimus libero optio aliquid, adipisci provident in ut atque,
+          dignissimos pariatur ex. Quae sequi fugiat quo eligendi dolor,
+          officiis velit nisi enim rem quibusdam perspiciatis accusamus. Dolores
+          dolor ducimus itaque cum magni.
+        </p>
+      </div>
+      <div class="footerSocial">
+        <a href="#"><i class="socialIcons fab fa-youtube"></i></a>
+        <a href="#"><i class="socialIcons fab fa-facebook"></i></a>
+        <a href="#"><i class="socialIcons fab fa-instagram"></i></a>
+        <a href="https://twitter.com/thetanmayupreti"
+          ><i class="socialIcons fab fa-twitter"></i
+        ></a>
+        <a href="https://github.com/tnmyy"
+          ><i class="socialIcons fab fa-github"></i
+        ></a>
+      </div>
+      <p class="copyright">
+        Copyright &copy <span id="year"></span> Tanmay Upreti
+      </p>
+    </footer>
+
+    <a href="#"><i class="fas fa-arrow-up upArrow"></i></a>
 
     <script src="./js/data.js"></script>
     <script src="./js/script.js"></script>
