@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let data = [
   {
     src: "portfolio.jpg",
@@ -44,29 +43,3 @@ let data = [
     path: "https://tnmyy.github.io/simple-bmi-calculator/",
   },
 ];
-=======
-let data = [
-  {
-    src: "tnmy.jpg",
-    alt: "Project",
-    title: "Portfolio",
-    description:
-      "This is my personal Portfolio website where you will get to know about Tanmay Upreti",
-    path: "../img/tnmy.jpg",
-  },
-  {
-    src: "tnmy.jpg",
-    alt: "Project",
-    title: "Calculator",
-    description: "Calculator",
-    path: "../img/tnmy.jpg",
-  },
-  {
-    src: "tnmy.jpg",
-    alt: "Project",
-    title: "Calculator",
-    description: "Calculator",
-    path: "../img/tnmy.jpg",
-  },
-];
->>>>>>> 7a2a49a52e8254df957f136d68c89a2b8d8a651e
