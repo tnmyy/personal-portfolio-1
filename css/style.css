@@ -212,7 +212,7 @@ nav > a > img:hover {
 }
 
 .imgDiv {
-  max-width: 20vw;
+  max-width: 25vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,15 +221,14 @@ nav > a > img:hover {
 }
 
 .projectImg {
-  width: 12rem;
+  height: 12rem;
   border: 3px solid var(--themeColor);
   border-radius: 1rem;
-  margin: 1rem 0.5rem;
-  margin-top: 0;
+  margin: 1rem 1rem;
 }
 
 .projectInfo {
-  width: 13rem;
+  width: 10rem;
   height: 0.5rem;
   visibility: hidden;
   position: absolute;
@@ -244,12 +243,16 @@ nav > a > img:hover {
 
 .projectTitle {
   margin: 0.5rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+}
+
+.projectDescription {
+  font-size: 0.9rem;
 }
 
 .projectPath {
   font-size: var(--fontPara);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin: 0.7rem;
 }
 
@@ -348,8 +351,8 @@ nav > a > img:hover {
 }
 
 .footerData > h1 {
-  font-weight: 600;
-  margin: 1rem;
+  font-weight: 500;
+  padding: 1rem;
 }
 
 .footerData > p {
@@ -360,4 +363,22 @@ nav > a > img:hover {
 
 .copyright {
   padding: 1rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footerIcons {
+  color: var(--themeColor);
+  margin: 0 0.5rem;
+  border: 0.15rem solid var(--themeColor);
+  border-radius: 50%;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.footerIcons:hover {
+  box-shadow: var(--hoverEffect);
+  background: var(--themeColor);
+  color: var(--bg1);
 }
