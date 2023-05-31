@@ -221,10 +221,11 @@ nav > a > img:hover {
 }
 
 .projectImg {
-  height: 12rem;
+  width: 15rem;
   border: 3px solid var(--themeColor);
   border-radius: 1rem;
-  margin: 1rem 1rem;
+  margin: 1rem;
+  margin-top: 0;
 }
 
 .projectInfo {
