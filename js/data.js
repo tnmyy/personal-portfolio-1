@@ -39,7 +39,7 @@ let data = [
     src: "bmi.jpg",
     alt: "Project",
     title: "BMI Calculator",
-    description: "Body Mass Index Calculator",
+    description: "Body Mass Index calculator",
     path: "https://tnmyy.github.io/simple-bmi-calculator/",
   },
 ];
