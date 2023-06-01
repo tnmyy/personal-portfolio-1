@@ -8,6 +8,13 @@ let data = [
     path: "https://tnmyy.github.io/personal-portfolio-1/",
   },
   {
+    src: "ap.jpg",
+    alt: "Arithmetic Progression",
+    title: "Arithmetic Progression",
+    description: "This will help you in problems related to AP",
+    path: "https://tnmyy.github.io/arithmetic-progression/",
+  },
+  {
     src: "beersheba.jpg",
     alt: "Project",
     title: "School Website",
