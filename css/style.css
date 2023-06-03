@@ -221,7 +221,7 @@ nav > a > img:hover {
 }
 
 .projectImg {
-  width: 15rem;
+  height: 10rem;
   border: 3px solid var(--themeColor);
   border-radius: 1rem;
   margin: 1rem;
@@ -274,6 +274,7 @@ nav > a > img:hover {
 
 .imgDiv:hover img {
   opacity: 0.5;
+  box-shadow: var(--hoverEffect);
 }
 
 /* Contact */
