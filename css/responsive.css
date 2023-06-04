@@ -1,0 +1,6 @@
+@media only screen and (max-width: 1150px) {
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
