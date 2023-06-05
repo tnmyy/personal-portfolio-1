@@ -15,7 +15,8 @@ let data = [
     path: "https://tnmyy.github.io/arithmetic-progression/",
   },
   {
-    src: "beersheba.jpg",
+    src: "clock.jpg",
+    // src: "beersheba.jpg",
     alt: "Project",
     title: "School Website",
     description: "New Beersheba Public School's website",
