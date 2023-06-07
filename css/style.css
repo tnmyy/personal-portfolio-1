@@ -20,7 +20,7 @@ nav {
   align-items: center;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   /* height: 10vh; */
   top: 0;
   /* border-bottom: 1px solid var(--fontClr); */
@@ -172,6 +172,10 @@ nav > a > img:hover {
   border-radius: 1rem;
   border: 2px solid var(--bg2);
   width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -206,53 +210,51 @@ nav > a > img:hover {
 
 #projects {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  row-gap: 1.5rem;
-  column-gap: 0.5rem;
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  align-items: center;
 }
 
 .imgDiv {
-  max-width: 25vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   overflow: hidden;
+  display: flex;
+  border-radius: 1rem;
+  width: 25vw;
 }
 
 .projectImg {
-  width: 15rem;
-  border: 3px solid var(--themeColor);
-  border-radius: 1rem;
+  width: 100%;
 }
 
 .projectInfo {
-  width: 10rem;
-  height: 0.5rem;
-  visibility: hidden;
   position: absolute;
-  opacity: 0;
-  text-align: center;
-  transition: all ease 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(200deg, rgba(0, 0, 0, 0.1), var(--themeColor));
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
 }
 
 .projectTitle {
   margin: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 
 .projectDescription {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .projectPath {
   font-size: var(--fontPara);
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0.7rem;
 }
 
@@ -261,19 +263,12 @@ nav > a > img:hover {
   color: var(--themeColor);
 }
 
-.imgDiv:hover .projectInfo {
-  opacity: 1;
-  visibility: visible;
-  height: 15%;
-}
-
-.imgDiv:hover {
+.imgDiv:hover .projectImg {
   transform: scale(1.1);
 }
 
-.imgDiv:hover img {
-  opacity: 0.5;
-  box-shadow: var(--hoverEffect);
+.imgDiv:hover .projectInfo {
+  transform: translateY(0);
 }
 
 /* Contact */
@@ -282,13 +277,15 @@ nav > a > img:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 90vw;
+  margin: auto;
   align-items: center;
 }
 
 #contactForm > textarea {
   background-color: var(--bg2);
   border: none;
-  width: 61.5vw;
+  width: 90%;
   padding: 1rem;
   margin: 0.5rem;
   font-size: var(--fontPara);
@@ -299,6 +296,10 @@ nav > a > img:hover {
 
 .group {
   margin: 0.5rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .group:nth-child(1) {
@@ -309,11 +310,15 @@ nav > a > img:hover {
   font-family: "Courier New", Courier, monospace;
   background-color: var(--bg2);
   border: none;
-  width: 30vw;
+  width: 100%;
   padding: 1rem;
   margin: 0 0.5rem;
   font-size: var(--fontPara);
   border-radius: 1rem;
+}
+
+#fromBtn {
+  width: 13rem;
 }
 
 /* Footer */
