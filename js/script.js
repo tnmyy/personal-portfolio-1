@@ -13,7 +13,7 @@ for (i = 0; i < data.length; i++) {
 
   // Img tag for project section
   let imgElement = document.createElement("img");
-  imgElement.src = `../img/${data[i].src}`;
+  imgElement.src = `./img/${data[i].src}`;
   imgElement.alt = data[i].alt;
   imgElement.classList.add("projectImg");
   imgDiv.prepend(imgElement);
