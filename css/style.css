@@ -213,6 +213,7 @@ nav > a > img:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   align-items: center;
+  place-items: center;
 }
 
 .imgDiv {
@@ -220,7 +221,7 @@ nav > a > img:hover {
   overflow: hidden;
   display: flex;
   border-radius: 1rem;
-  width: 25vw;
+  width: 23vw;
 }
 
 .projectImg {
