@@ -103,4 +103,49 @@
     font-size: 2rem;
     margin: 0.7rem;
   }
+
+  #about {
+    flex-direction: column;
+  }
+
+  .aboutData {
+    width: 90%;
+    margin-left: 0;
+    max-width: 80vw;
+  }
+
+  .aboutImg {
+    margin: 3rem;
+  }
+
+  .homeContainer {
+    flex-direction: column;
+  }
+
+  .homeImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+  }
+
+  /* Nav links */
+
+  nav {
+    flex-direction: column;
+    position: relative sticky;
+  }
+
+  #listItems {
+    /* visibility: hidden; */
+    position: absolute;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100%);
+    background: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 }

@@ -21,9 +21,8 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 3;
-  /* height: 10vh; */
   top: 0;
-  /* border-bottom: 1px solid var(--fontClr); */
+  overflow: hidden;
 }
 
 nav > a > img {
@@ -37,24 +36,28 @@ nav > a > img:hover {
   transform: scale(1.1);
 }
 
-.listItems {
+#listItems {
   display: flex;
 }
 
-.listItems > li {
+#listItems > li {
   list-style: none;
   margin: 0.5rem;
 }
 
-.listItems > li > a {
+#listItems > li > a {
   text-decoration: none;
   font-size: var(--fontPara);
 }
 
-.listItems > li > a:hover {
+#listItems > li > a:hover {
   color: var(--themeColor);
   text-shadow: var(--hoverEffect);
   font-size: 1.2rem;
+}
+
+#navBars {
+  visibility: hidden;
 }
 
 /* Home */
@@ -296,8 +299,8 @@ nav > a > img:hover {
 }
 
 .group {
-  margin: 0.5rem;
-  width: 90%;
+  margin: 0.5rem 0;
+  width: 91%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -52,3 +52,14 @@ let newDate = new Date();
 
 footerYear.innerHTML = newDate.getFullYear();
 console.log(`Tanmay Upreti`);
+
+// Hamburger Navbar
+
+const list = document.getElementById("listItems");
+console.log(list);
+
+const mediaQuery = window.matchMedia("(min-width: 780px)");
+
+if (mediaQuery.matches) {
+  console.log(`mathc`);
+}
