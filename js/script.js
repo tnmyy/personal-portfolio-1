@@ -55,11 +55,33 @@ console.log(`Tanmay Upreti`);
 
 // Hamburger Navbar
 
+const navBars = document.getElementById("navBars");
 const list = document.getElementById("listItems");
 console.log(list);
 
-const mediaQuery = window.matchMedia("(min-width: 780px)");
+const responsiveNav = (mediaQuery) => {
+  if (mediaQuery.matches) {
+    console.log(`Hey`);
+    navBars.style.visibility = "visible";
+  } else {
+    console.log(`No`);
+  }
+};
 
-if (mediaQuery.matches) {
-  console.log(`mathc`);
+const mediaQuery = window.matchMedia("(width<= 780px)");
+responsiveNav(mediaQuery);
+mediaQuery.addEventListener("change", responsiveNav);
+
+navBars.addEventListener("click", () => {
+  navBars.classList.toggle("fa-times");
+});
+
+if ((navBars.classList.contains = "fa-time")) {
+  list.style.visibility = "visible";
+  list.style.transform = "translateY(0)";
+  list.style.opacity = "1";
+} else {
+  list.style.visibility = "hidden";
+  list.style.transform = "translateY(100%)";
+  list.style.opacity = "0";
 }
