@@ -139,9 +139,10 @@
 
   #listItems {
     position: absolute;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
+    padding: 0;
   }
 
   .bar {
@@ -171,5 +172,17 @@
   #navBars {
     font-size: 1.75rem;
     cursor: pointer;
+  }
+
+  .navLinks {
+    width: 80%;
+    padding: 1rem 0;
+    text-align: center;
+    flex-direction: column;
+    border-top: 0.01rem solid var(--fontClr);
+  }
+
+  .crossHome {
+    margin-top: 22rem;
   }
 }

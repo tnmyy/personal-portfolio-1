@@ -57,6 +57,7 @@ console.log(`Tanmay Upreti`);
 
 const navBars = document.getElementById("navBars");
 const list = document.getElementById("listItems");
+const home = document.getElementById("home");
 
 const responsiveNav = (mediaQuery) => {
   if (mediaQuery.matches) {
@@ -70,30 +71,8 @@ const mediaQuery = window.matchMedia("(width<= 780px)");
 responsiveNav(mediaQuery);
 mediaQuery.addEventListener("change", responsiveNav);
 
-// navBars.addEventListener("click", () => {
-//   navBars.classList.toggle("fa-times");
-//   navBars.classList.toggle("cross");
-//   navBars.classList.toggle("bar");
-
-//   if ((navBars.classList.contains = "cross")) {
-//     list.style.visibility = "visible";
-//     list.style.transform = "translateY(80%)";
-//     list.style.display = "contents";
-//     list.style.padding = "1rem";
-//     list.style.opacity = "1";
-//     console.log(`Yes`);
-//   } else {
-//     console.log("No");
-//   }
-//   // if ((navBars.classList.contains = "bar")) {
-//   //   list.style.visibility = "hidden";
-//   //   list.style.transform = "translateY(100%)";
-//   //   list.style.opacity = "0";
-//   //   console.log(`No`);
-//   // }
-// });
-
 navBars.addEventListener("click", () => {
   navBars.classList.toggle("fa-times");
   list.classList.toggle("cross");
+  home.classList.toggle("crossHome");
 });
