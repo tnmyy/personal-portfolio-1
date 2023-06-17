@@ -182,7 +182,11 @@
     border-top: 0.01rem solid var(--fontClr);
   }
 
-  .crossHome {
+  .navLinks > li > a:hover {
+    font-size: var(--fontPara);
+  }
+
+  .crossLink {
     margin-top: 22rem;
   }
 }

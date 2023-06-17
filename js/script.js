@@ -58,6 +58,15 @@ console.log(`Tanmay Upreti`);
 const navBars = document.getElementById("navBars");
 const list = document.getElementById("listItems");
 const home = document.getElementById("home");
+const about = document.getElementById("about");
+const services = document.getElementById("services");
+const portfolio = document.getElementById("portfolio");
+const contact = document.getElementById("contact");
+
+const aboutLinkNav = document.getElementById("aboutLinkNav");
+const servicesLinkNav = document.getElementById("servicesLinkNav");
+const portfolioLinkNav = document.getElementById("portfolioLinkNav");
+const contactLinkNav = document.getElementById("contactLinkNav");
 
 const responsiveNav = (mediaQuery) => {
   if (mediaQuery.matches) {
@@ -73,6 +82,31 @@ mediaQuery.addEventListener("change", responsiveNav);
 
 navBars.addEventListener("click", () => {
   navBars.classList.toggle("fa-times");
+  navBars.classList.toggle("crossLinkChecker");
   list.classList.toggle("cross");
-  home.classList.toggle("crossHome");
+  home.classList.toggle("crossLink");
+
+  aboutLinkNav.addEventListener("click", () => {
+    about.classList.toggle("crossLink");
+  });
+
+  servicesLinkNav.addEventListener("click", () => {
+    services.classList.toggle("crossLink");
+  });
+
+  portfolioLinkNav.addEventListener("click", () => {
+    portfolio.classList.toggle("crossLink");
+  });
+
+  contactLinkNav.addEventListener("click", () => {
+    contact.classList.toggle("crossLink");
+  });
+
+  if (navBars.classList.contains("crossLinkChecker")) {
+    about.classList.remove("crossLink");
+    services.classList.remove("crossLink");
+    portfolio.classList.remove("crossLink");
+    contact.classList.remove("crossLink");
+    console.log(`y`);
+  }
 });
