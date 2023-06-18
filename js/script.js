@@ -1,7 +1,6 @@
 console.log(`Tanmay Upreti`);
 
 let projects = document.getElementById(`projects`);
-console.log(projects);
 
 console.log(data[0]);
 
@@ -51,7 +50,6 @@ let footerYear = document.getElementById("year");
 let newDate = new Date();
 
 footerYear.innerHTML = newDate.getFullYear();
-console.log(`Tanmay Upreti`);
 
 // Hamburger Navbar
 
@@ -87,19 +85,19 @@ navBars.addEventListener("click", () => {
   home.classList.toggle("crossLink");
 
   aboutLinkNav.addEventListener("click", () => {
-    about.classList.toggle("crossLink");
+    about.classList.add("crossLink");
   });
 
   servicesLinkNav.addEventListener("click", () => {
-    services.classList.toggle("crossLink");
+    services.classList.add("crossLink");
   });
 
   portfolioLinkNav.addEventListener("click", () => {
-    portfolio.classList.toggle("crossLink");
+    portfolio.classList.add("crossLink");
   });
 
   contactLinkNav.addEventListener("click", () => {
-    contact.classList.toggle("crossLink");
+    contact.classList.add("crossLink");
   });
 
   if (navBars.classList.contains("crossLinkChecker")) {
@@ -107,6 +105,29 @@ navBars.addEventListener("click", () => {
     services.classList.remove("crossLink");
     portfolio.classList.remove("crossLink");
     contact.classList.remove("crossLink");
-    console.log(`y`);
+  }
+});
+
+if (navBars.classList.contains("fa-times")) {
+  about.classList.remove("crossLink");
+  services.classList.remove("crossLink");
+  portfolio.classList.remove("crossLink");
+  contact.classList.remove("crossLink");
+}
+
+const sections = document.getElementById("sections");
+
+sections.addEventListener("click", () => {
+  if (navBars.classList.contains("fa-times")) {
+    navBars.classList.remove("fa-times");
+    list.classList.remove("cross");
+    home.classList.remove("crossLink");
+    about.classList.remove("crossLink");
+    services.classList.remove("crossLink");
+    portfolio.classList.remove("crossLink");
+    contact.classList.remove("crossLink");
+    console.log(`It contains`);
+  } else {
+    console.log(`it not`);
   }
 });
