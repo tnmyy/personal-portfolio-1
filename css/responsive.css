@@ -86,12 +86,13 @@
   }
 
   .imgDiv {
-    width: 40vw;
+    width: 42vw;
   }
 
   .projectTitle {
     margin: 0.5rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 1;
   }
 
   .projectDescription {
@@ -188,5 +189,100 @@
 
   .crossLink {
     margin-top: 22rem;
+  }
+
+  .myImg {
+    margin: 0;
+  }
+}
+
+@media screen and (width<=650px) {
+  .imgDiv {
+    width: 41vw;
+  }
+
+  .card {
+    width: 80vw;
+  }
+
+  .projectTitle {
+    margin: 0.2rem;
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  .projectDescription {
+    font-size: 0.9rem;
+  }
+
+  .projectPath {
+    font-size: var(--fontPara);
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (width<=460px) {
+  #projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .imgDiv {
+    width: 75vw;
+  }
+
+  .projectTitle {
+    margin: 0.5rem;
+    font-size: 2.2rem;
+  }
+
+  .projectDescription {
+    font-size: 1.1rem;
+  }
+
+  .projectPath {
+    font-size: var(--fontPara);
+    font-size: 2rem;
+    margin: 0.7rem;
+  }
+
+  .group {
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+
+  .group:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .group:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .group > input {
+    margin: 0.5rem;
+  }
+
+  .group {
+    width: 97%;
+  }
+
+  #message {
+    max-height: 20rem;
+    min-height: 20rem;
+  }
+
+  .navDiv > a > img {
+    width: 5rem;
+  }
+
+  .myImg {
+    width: 15rem;
+  }
+}
+
+@media screen and (width<=420px) {
+  .socialIcons {
+    margin: 0.3rem 0.1rem;
   }
 }

@@ -123,7 +123,7 @@ nav > a > img:hover {
 
 .socialIcons {
   color: var(--themeColor);
-  margin: 0 0.5rem;
+  margin: 0.1rem 0.5rem;
   border: 0.15rem solid var(--themeColor);
   border-radius: 50%;
   padding: 0.5rem;
@@ -290,21 +290,25 @@ nav > a > img:hover {
   align-items: center;
 }
 
-#contactForm > textarea {
+#message {
   background-color: var(--bg2);
   border: none;
-  width: 90%;
+  max-width: 97%;
+  min-width: 97%;
+  max-height: 15rem;
+  min-height: 15rem;
   padding: 1rem;
   margin: 0.5rem;
   font-size: var(--fontPara);
   font-family: "Courier New", Courier, monospace;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  text-align-last: left;
 }
 
 .group {
   margin: 0.5rem 0;
-  width: 91%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

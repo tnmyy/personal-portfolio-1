@@ -66,17 +66,34 @@ const servicesLinkNav = document.getElementById("servicesLinkNav");
 const portfolioLinkNav = document.getElementById("portfolioLinkNav");
 const contactLinkNav = document.getElementById("contactLinkNav");
 
-const responsiveNav = (mediaQuery) => {
+// const responsiveNav = (mediaQuery) => {
+//   if (mediaQuery.matches) {
+//     navBars.style.visibility = "visible";
+//     // window.location.reload();
+//     console.log(143);
+//   } else {
+//     navBars.style.visibility = "hidden";
+//   }
+// };
+
+// const mediaQuery = window.matchMedia("(width<= 780px)");
+// responsiveNav(mediaQuery);
+// mediaQuery.addEventListener("change", responsiveNav);
+
+const mediaQuery = window.matchMedia("(max-width: 780px)");
+
+const handleMediaQuery = (mediaQuery) => {
   if (mediaQuery.matches) {
     navBars.style.visibility = "visible";
+    console.log(143);
   } else {
     navBars.style.visibility = "hidden";
   }
 };
 
-const mediaQuery = window.matchMedia("(width<= 780px)");
-responsiveNav(mediaQuery);
-mediaQuery.addEventListener("change", responsiveNav);
+mediaQuery.addEventListener("change", handleMediaQuery);
+
+handleMediaQuery(mediaQuery);
 
 navBars.addEventListener("click", () => {
   navBars.classList.toggle("fa-times");
